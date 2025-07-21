@@ -9,6 +9,7 @@
     docker
     docker-compose
     firefox
+    gettext
     gh
     git
     google-cloud-sdk
