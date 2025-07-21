@@ -6,9 +6,9 @@
 }:
 
 let
-  user = "ricardo.silva";
+  user = "richie";
   gitName = "Ricardo Silva";
-  gitEmail = "ricardo.silva@freiheit.com";
+  gitEmail = "ricardoedgarsilva@gmail.com";
 in
 {
   imports = [
@@ -41,13 +41,6 @@ in
       source = "${inputs.dotfiles}/skhd/skhdrc";
       executable = true;
     };
-
-    # Copy the entire nvim configuration directory
-    xdg.configFile."nvim" = {
-      source = "${inputs.dotfiles}/nvim";
-      executable = true;
-    };
-
 
     programs.git = {
       enable = true;
@@ -132,33 +125,4 @@ in
   services.yabai.enable = true;
   services.skhd.enable = true;
 
-  local.dock = {
-    enable = true;
-    username = user;
-    entries = [
-      { path = "/Applications/Launchpad.app"; }
-      { path = "/Applications/1Password.app"; }
-      { path = "/Applications/Google Chrome.app"; }
-      { path = "${pkgs.firefox}/Applications/Firefox.app"; }
-      { path = "${config.users.users.${user}.home}/Applications/Chrome Apps.localized/Google Chat.app"; }
-      { path = "/Applications/Microsoft Teams.app"; }
-      { path = "/Applications/WhatsApp.app"; }
-      { path = "/Applications/ChatGPT.app"; }
-      { path = "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"; }
-      { path = "${pkgs.vscode}/Applications/Visual Studio Code.app"; }
-      { path = "/Applications/Utilities/Terminal.app"; }
-      { path = "/Applications/Postman.app"; }
-      { path = "${pkgs.obsidian}/Applications/Obsidian.app"; }
-      {
-        path = "${config.users.users.${user}.home}/Google Drive/My Drive";
-        section = "others";
-        options = "--sort name --view grid --display stack";
-      }
-      {
-        path = "${config.users.users.${user}.home}/Downloads";
-        section = "others";
-        options = "--sort name --view grid --display stack";
-      }
-    ];
-  };
 }

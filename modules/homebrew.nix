@@ -5,7 +5,7 @@
   imports = [ inputs.nix-homebrew.darwinModules.nix-homebrew ];
 
   nix-homebrew = {
-    user = lib.mkDefault "ricardo.silva"; # overridden per-host if needed
+    user = lib.mkDefault "ricardo.silva"; 
     enable = true;
     mutableTaps = false;
     autoMigrate = true;

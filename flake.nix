@@ -1,5 +1,5 @@
 {
-  description = "freiheit.com technologies – Richie Mac setup";
+  description = "freiheit.com technologies - Richie Mac setup";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -27,7 +27,7 @@
       flake = false;
     };
     dotfiles = {
-      url = "github:ricardoedgarsilva/dotfiles";
+      url = "github:ricardoedgarsilva/dotfiles?ref=feature/neovim_start";
       flake = false;
     };
   };
@@ -49,7 +49,7 @@
       darwinConfigurations = builtins.mapAttrs (
         hostName: _:
         nix-darwin.lib.darwinSystem {
-          system = "aarch64-darwin"; # Override per-host if needed
+          system = "aarch64-darwin"; 
           modules = [ ./hosts/${hostName} ];
           specialArgs = { inherit inputs; };
         }

@@ -8,14 +8,18 @@
     coreutils
     docker
     docker-compose
+    firebase-tools
     firefox
+    gettext
     gh
     git
     google-cloud-sdk
     hermitcli
     lcov
     neofetch
+    neovim
     nixfmt
+    nodejs
     nodejs
     obsidian
     thunderbird
