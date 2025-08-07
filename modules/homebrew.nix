@@ -30,6 +30,7 @@
       "microsoft-teams"
       "postman"
       "whatsapp"
+      "anythingllm"
     ];
   };
 }

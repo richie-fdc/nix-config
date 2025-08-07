@@ -4,6 +4,7 @@
 {
   environment.systemPackages = with pkgs; [
     bash-completion
+    cocoapods
     colima
     coreutils
     docker
@@ -22,6 +23,7 @@
     nodejs
     nodejs
     obsidian
+    ollama
     thunderbird
     vscode
   ];
