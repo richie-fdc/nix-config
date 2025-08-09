@@ -26,6 +26,7 @@
       "1password"
       "chatgpt"
       "deepl"
+      "godot"
       "logi-options+"
       "microsoft-teams"
       "postman"
