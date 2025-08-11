@@ -24,11 +24,13 @@
     };
     casks = [
       "1password"
+      "anythingllm"
       "chatgpt"
       "deepl"
       "godot"
       "logi-options+"
       "microsoft-teams"
+      "ollama"
       "postman"
       "whatsapp"
     ];
