@@ -22,12 +22,15 @@
       autoUpdate = true;
       cleanup = "zap";
     };
+    brews = [
+      "fastlane"
+    ];
+
     casks = [
       "1password"
       "anythingllm"
       "chatgpt"
       "deepl"
-      "fastlane"
       "godot"
       "logi-options+"
       "microsoft-teams"

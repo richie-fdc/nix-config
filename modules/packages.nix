@@ -13,12 +13,14 @@
     gh
     git
     google-cloud-sdk
+    gpg
     hermitcli
     lcov
     neofetch
     nixfmt
     nodejs
     obsidian
+    sops
     thunderbird
     vscode
   ];
