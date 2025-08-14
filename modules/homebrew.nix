@@ -27,6 +27,7 @@
       "anythingllm"
       "chatgpt"
       "deepl"
+      "fastlane"
       "godot"
       "logi-options+"
       "microsoft-teams"
