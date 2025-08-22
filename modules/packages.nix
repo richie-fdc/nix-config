@@ -13,7 +13,7 @@
     gh
     git
     google-cloud-sdk
-    gpg
+    gnupg
     hermitcli
     lcov
     neofetch
