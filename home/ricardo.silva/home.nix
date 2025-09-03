@@ -84,9 +84,10 @@ in
         grep = "rg";
         ll = "eza -lah --icons";
         ls = "eza --group-directories-first";
-        nix-apply = "sudo nix run nix-darwin -- switch --flake ~/.nix-config/.#${pkgs.system}";
-        nix-rebuild = "sudo darwin-rebuild switch --flake ~/.nix-config/.#${pkgs.system}";
+        nix-apply = "sudo nix run nix-darwin -- switch --flake ~/.nix-config/.#phantom-one";
+        nix-rebuild = "sudo darwin-rebuild switch --flake ~/.nix-config/.#phantom-one";
         tree = "eza --tree";
+        colima-start-emulation = "colima start --arch x86_64 --vz-rosetta";
       };
 
       initContent = ''
@@ -109,6 +110,7 @@ in
 
         # Setup colima docker sock
         export DOCKER_HOST="unix://$HOME/.config/colima/default/docker.sock"
+        export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
       '';
 
       oh-my-zsh = {
