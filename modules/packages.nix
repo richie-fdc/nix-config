@@ -9,11 +9,12 @@
     docker
     docker-compose
     firefox
+    flock
     gettext
     gh
     git
-    google-cloud-sdk
     gnupg
+    google-cloud-sdk
     hermitcli
     lcov
     neofetch

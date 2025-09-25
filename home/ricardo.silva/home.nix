@@ -110,7 +110,7 @@ in
 
         # Setup colima docker sock
         export DOCKER_HOST="unix://$HOME/.config/colima/default/docker.sock"
-        export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+        export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE="unix://$HOME/.config/colima/default/docker.sock"
       '';
 
       oh-my-zsh = {
