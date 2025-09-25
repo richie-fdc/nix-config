@@ -9,6 +9,7 @@
       "com.apple.mouse.tapBehavior" = 1;
     };
 
+
     finder = {
       ShowPathbar = true;
       FXPreferredViewStyle = "Nlsv";
@@ -44,6 +45,11 @@
             "KeyboardLayout Name" = "U.S.";
           }
         ];
+      };
+
+      "com.apple.loginwindow" = {
+        TALLogoutSavesState = false;
+        LoginwindowLaunchesRelaunchApps = false;
       };
     };
   };
