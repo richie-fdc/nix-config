@@ -1,5 +1,5 @@
 {
-  description = "freiheit.com technologies – Richie Mac setup";
+  description = "freiheit.com technologies - Richie Mac setup";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -27,7 +27,7 @@
       flake = false;
     };
     dotfiles = {
-      url = "github:ricardoedgarsilva/dotfiles";
+      url = "github:ricardoedgarsilva/dotfiles?ref=feature/neovim_start";
       flake = false;
     };
   };

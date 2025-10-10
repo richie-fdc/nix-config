@@ -8,7 +8,6 @@
     coreutils
     docker
     docker-compose
-    firefox
     flock
     gettext
     gh

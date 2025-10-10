@@ -29,14 +29,17 @@
     casks = [
       "1password"
       "chatgpt"
+      "firefox"
       "godot"
-      "logi-options+"
       "microsoft-teams"
+      "neovim"
       "obsidian"
       "ollama"
       "postman"
       "visual-studio-code"
       "whatsapp"
+      "zed"
+      # "logi-options+" # Not working
     ];
   };
 }

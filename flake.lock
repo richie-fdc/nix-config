@@ -20,15 +20,16 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1750805006,
-        "narHash": "sha256-9VegPIjz+0EBQescEQWOiG+JPQ2RkFhgiykAe1F1Oto=",
+        "lastModified": 1753739227,
+        "narHash": "sha256-vCy2rAZS1WZJuwnVeNaFl04YMbNU+8OTzP0KwlQmdn8=",
         "owner": "ricardoedgarsilva",
         "repo": "dotfiles",
-        "rev": "a74a8423211e485c03ea64cf02e8a77d377b6be8",
+        "rev": "a84778aa4246cb1c6632afdd2f76de82bf773b37",
         "type": "github"
       },
       "original": {
         "owner": "ricardoedgarsilva",
+        "ref": "feature/neovim_start",
         "repo": "dotfiles",
         "type": "github"
       }

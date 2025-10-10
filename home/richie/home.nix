@@ -41,6 +41,11 @@ in
       source = "${inputs.dotfiles}/skhd/skhdrc";
       executable = true;
     };
+    xdg.configFile."nvim" = {
+      source = "${inputs.dotfiles}/nvim";
+      recursive = true;
+      copy = true;
+    };
 
     programs.git = {
       enable = true;

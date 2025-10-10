@@ -36,10 +36,18 @@ in
     xdg.configFile."yabai/yabairc" = {
       source = "${inputs.dotfiles}/yabai/yabairc";
       executable = true;
+      copy = true;
     };
     xdg.configFile."skhd/skhdrc" = {
       source = "${inputs.dotfiles}/skhd/skhdrc";
       executable = true;
+      copy = true;
+    };
+
+    xdg.configFile."nvim" = {
+      source = "${inputs.dotfiles}/nvim";
+      recursive = true;
+      copy = true;
     };
 
     programs.git = {
@@ -88,6 +96,7 @@ in
         nix-rebuild = "sudo darwin-rebuild switch --flake ~/.nix-config/.#phantom-one";
         tree = "eza --tree";
         colima-start-emulation = "colima start --arch x86_64 --vz-rosetta";
+        buf = "buf --exclude-path .hermit";
       };
 
       initContent = ''
