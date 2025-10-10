@@ -32,8 +32,10 @@
       "godot"
       "logi-options+"
       "microsoft-teams"
+      "obsidian"
       "ollama"
       "postman"
+      "visual-studio-code"
       "whatsapp"
     ];
   };

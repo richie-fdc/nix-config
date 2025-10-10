@@ -20,10 +20,7 @@
     neofetch
     nixfmt
     nodejs
-    obsidian
     sops
-    thunderbird
-    vscode
     sqlfluff
   ];
 }
