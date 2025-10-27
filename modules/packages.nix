@@ -4,7 +4,6 @@
 {
   environment.systemPackages = with pkgs; [
     bash-completion
-    colima
     coreutils
     docker
     docker-compose
