@@ -7,19 +7,15 @@
   nix-homebrew = {
     user = lib.mkDefault "ricardo.silva"; # overridden per-host if needed
     enable = true;
-    mutableTaps = false;
+    mutableTaps = true;
     autoMigrate = true;
-    taps = {
-      "homebrew/homebrew-core" = inputs.homebrew-core or null;
-      "homebrew/homebrew-cask" = inputs.homebrew-cask or null;
-      "homebrew/homebrew-bundle" = inputs.homebrew-bundle or null;
-    };
   };
 
   homebrew = {
     enable = true;
     onActivation = {
       autoUpdate = true;
+      upgrade = true;
       cleanup = "zap";
     };
     brews = [
@@ -32,9 +28,8 @@
       "firefox"
       "godot"
       "microsoft-teams"
-      "neovim"
       "obsidian"
-      "ollama"
+      "ollama-app"
       "postman"
       "visual-studio-code"
       "whatsapp"

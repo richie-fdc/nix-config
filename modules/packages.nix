@@ -17,6 +17,7 @@
     hermitcli
     lcov
     neofetch
+    neovim
     nixfmt
     nodejs
     sops

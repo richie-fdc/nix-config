@@ -44,7 +44,6 @@ in
     xdg.configFile."nvim" = {
       source = "${inputs.dotfiles}/nvim";
       recursive = true;
-      copy = true;
     };
 
     programs.git = {
@@ -135,7 +134,7 @@ in
     username = user;
     entries = [
       { path = "/Applications/Launchpad.app"; }
-      { path = "${pkgs.firefox}/Applications/Firefox.app"; }
+      { path = "/Applications/Firefox.app"; }
       { path = "/Applications/WhatsApp.app"; }
       { path = "/Applications/ChatGPT.app"; }
       { path = "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"; }

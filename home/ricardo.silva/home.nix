@@ -36,34 +36,23 @@ in
     xdg.configFile."yabai/yabairc" = {
       source = "${inputs.dotfiles}/yabai/yabairc";
       executable = true;
-      copy = true;
     };
     xdg.configFile."skhd/skhdrc" = {
       source = "${inputs.dotfiles}/skhd/skhdrc";
       executable = true;
-      copy = true;
     };
 
     xdg.configFile."nvim" = {
       source = "${inputs.dotfiles}/nvim";
       recursive = true;
-      copy = true;
     };
 
     programs.git = {
       enable = true;
-      userName = gitName;
-      userEmail = gitEmail;
-
       lfs.enable = true;
-      delta.enable = true;
-      delta.options = {
-        syntax-theme = "GitHub";
-        line-numbers = true;
-        navigate = true;
-      };
-
-      extraConfig = {
+      settings = {
+        user.name = gitName;
+        user.email = gitEmail;
         init.defaultBranch = "main";
         core = {
           editor = "code";
@@ -71,6 +60,16 @@ in
         };
         pull.rebase = true;
         rebase.autoStash = true;
+      };
+    };
+
+    programs.delta = {
+      enable = true;
+      enableGitIntegration = true;
+      options = {
+        syntax-theme = "GitHub";
+        line-numbers = true;
+        navigate = true;
       };
     };
 
@@ -146,16 +145,15 @@ in
       { path = "/Applications/Launchpad.app"; }
       { path = "/Applications/1Password.app"; }
       { path = "/Applications/Google Chrome.app"; }
-      { path = "${pkgs.firefox}/Applications/Firefox.app"; }
-      { path = "${config.users.users.${user}.home}/Applications/Chrome Apps.localized/Google Chat.app"; }
+      { path = "/Applications/Firefox.app"; }
       { path = "/Applications/Microsoft Teams.app"; }
       { path = "/Applications/WhatsApp.app"; }
       { path = "/Applications/ChatGPT.app"; }
       { path = "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"; }
-      { path = "${pkgs.vscode}/Applications/Visual Studio Code.app"; }
+      { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Utilities/Terminal.app"; }
       { path = "/Applications/Postman.app"; }
-      { path = "${pkgs.obsidian}/Applications/Obsidian.app"; }
+      { path = "/Applications/Obsidian.app"; }
       {
         path = "${config.users.users.${user}.home}/Google Drive/My Drive";
         section = "others";
